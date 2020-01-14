@@ -1,0 +1,29 @@
+db.products.insertMany(
+    [
+    
+    {id:305,name:"Naima" ,email:"naima67@gmail.com", age:20},
+    {id:306,name:"hamza" ,email:"hamza4532@yahoo.com", age:19},
+    {id:307,name:"ali" ,email:"alifaizan56@edu.pk", age:15}
+    
+    
+    ])
+    
+db.products.update({id:305}, 
+    {$set:{age:12}}, 
+   
+)
+
+db.products.find({})
+   .projection({})
+   .sort({_id:-1})
+   .limit(100)
+   
+   
+   db.products.deleteMany({
+       id:306
+   })
+   
+  db.products.find({})
+   .projection({})
+   .sort({_id:-1})
+   .limit(100)
