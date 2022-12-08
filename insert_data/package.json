@@ -9,7 +9,7 @@
   "author": "fareena Ehtesham",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "mongodb": "^2.2.36",
     "popups": "^1.1.3"
   }
